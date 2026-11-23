@@ -7,6 +7,8 @@ name: GPU Simulator
 # compiler. The simulator has no timing model, so it checks results only.
 
 on:
+  push:
+    branches: [ verify-gpu-sim ]
   workflow_dispatch:
   pull_request:
     branches: [ main ]
